@@ -127,6 +127,55 @@ docker-compose up -d
 docker-compose logs -f
 ```
 
+### Deploy to Cloudflare Pages (Recommended)
+
+#### Frontend Deployment (Cloudflare Pages)
+
+1. **Prepare your repository**
+   ```bash
+   git push origin main
+   ```
+
+2. **Connect to Cloudflare Pages**
+   - Go to [Cloudflare Dashboard](https://dash.cloudflare.com)
+   - Pages → Create a project → Connect to Git
+   - Select your repository
+   - Build settings:
+     - **Framework**: Vue (Vite)
+     - **Build command**: `npm run build`
+     - **Build output directory**: `frontend/dist`
+     - **Root directory**: `/`
+
+3. **Set environment variables** (if needed)
+   - Add `VITE_API_URL` = your backend URL
+
+4. **Deploy**
+   - Choose production branch: `main`
+   - Cloudflare will auto-deploy on push
+
+#### Backend Deployment (Option 1: Separate Hosting)
+
+For FastAPI backend, you can deploy to:
+- **Railway.app** - Free tier available
+- **Render.com** - Easy Python deployment
+- **PythonAnywhere** - Python-specific hosting
+- **Your own VPS** with Docker
+
+Update your frontend to point to the backend API:
+```env
+VITE_API_URL=https://your-backend-domain.com
+```
+
+#### Backend Deployment (Option 2: Cloudflare Workers)
+
+If you want to convert FastAPI to Cloudflare Workers:
+```bash
+npm install -g wrangler
+wrangler deploy
+```
+
+(This requires converting Python to JavaScript/TypeScript first)
+
 ---
 
 ## 🎮 Sử dụng

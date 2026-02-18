@@ -1,0 +1,30 @@
+name = "transcriptnis-backend"
+main = "src/index.ts"
+compatibility_date = "2024-12-19"
+url = "http://localhost:8787"
+
+# Pages configuration
+pages_build_caching = true
+
+[env.production]
+name = "transcriptnis-backend-prod"
+route = "api/*"
+zone_id = "" # Add your Cloudflare zone ID
+
+# Environment variables
+[env.development]
+vars = { BACKEND_API = "http://localhost:8000" }
+
+[env.production]
+vars = { BACKEND_API = "https://your-api-domain.com" }
+
+# Assets configuration for serving frontend
+[[build.upload_rules]]
+type = "CompiledContentType"
+globs = ["**/*.wasm"]
+fallthrough = true
+
+[[build.upload_rules]]
+type = "Text"
+globs = ["**/*.txt", "**/*.html"]
+fallthrough = true

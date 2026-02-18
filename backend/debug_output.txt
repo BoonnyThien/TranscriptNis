@@ -1,0 +1,25 @@
+============================================================
+DEBUG: Transcript API Test (Simple English Video)
+============================================================
+
+1. Checking FFmpeg...
+   FFmpeg: C:\Users\buith\AppData\Local\Microsoft\WinGet\Links
+
+2. Checking Cloudflare...
+   Account ID: b1a7fe77c6...
+   API Token: 6nuiyuTTko...
+
+3. Testing download: https://www.youtube.com/watch?v=ZXsQAXx_ao0
+   [OK] Downloaded: 8a00019d-58b8-49ac-84d3-907709ced859.mp3
+   Platform: youtube
+   Title: Shia LaBeouf "Just Do It" Motivational Speech (Ori
+   File size: 502.4 KB
+
+4. Testing transcription...
+   [OK] Transcription successful!
+   Word count: 379
+   Text preview: Do it! Just do it! Don't let your dreams be dreams. Yesterday you said tomorrow, so just do it! Make your dreams come true! Just do it! Some people dream of success while you're gonna wake up and work hard at it. Nothing is impossible. You should get to the point where anyone else would quit and you...
+   [OK] Cleaned up
+
+============================================================
+Test completed!

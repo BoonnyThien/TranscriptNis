@@ -1,0 +1,14 @@
+{
+  "name": "transcriptnis",
+  "version": "1.0.0",
+  "description": "YouTube Video Transcription with AI",
+  "type": "module",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm install && npm run build",
+    "preview": "cd frontend && npm run preview"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
