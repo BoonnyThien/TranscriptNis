@@ -6,16 +6,14 @@ url = "http://localhost:8787"
 # Pages configuration
 pages_build_caching = true
 
-[env.production]
-name = "transcriptnis-backend-prod"
-route = "api/*"
-zone_id = "" # Add your Cloudflare zone ID
-
 # Environment variables
 [env.development]
 vars = { BACKEND_API = "http://localhost:8000" }
 
 [env.production]
+name = "transcriptnis-backend-prod"
+route = "api/*"
+zone_id = "" # Add your Cloudflare zone ID
 vars = { BACKEND_API = "https://your-api-domain.com" }
 
 # Assets configuration for serving frontend
