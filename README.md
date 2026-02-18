@@ -10,7 +10,7 @@
 
 **Chuyển đổi video YouTube thành văn bản với sức mạnh AI**
 
-[Demo](#demo) • [Tính năng](#-tính-năng) • [Cài đặt](#-cài-đặt) • [Sử dụng](#-sử-dụng) • [API](#-api-documentation)
+[Demo](#demo) • [Tính năng](#-tính-năng) • [Cài đặt](#-cài-đặt) • [Sử dụng](#-sử-dụng) • [API](#-api-documentation) 
 
 </div>
 
